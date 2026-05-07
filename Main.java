@@ -15,15 +15,23 @@ public class Main {
             printMenu();
             choice = getIntInput("Choose: ");
             switch (choice) {
-                case 1 -> addCustomer();
-                case 2 -> callNextCustomer();
-                case 3 -> viewQueue();
-                case 4 -> peekNext();
-                case 5 -> searchCustomer();       // Iterative
-                case 6 -> longestWaiting();        // Recursive
-                case 7 -> viewCustomerHistory();   // View history
-                case 0 -> System.out.println("\n[System closed. Thank you]");
-                default -> System.out.println("Invalid option. Please try again");
+                case 1 : addCustomer();
+                break;
+                case 2 : callNextCustomer();
+                break;
+                case 3 : viewQueue();
+                break;
+                case 4 : peekNext();
+                break;
+                case 5 : searchCustomer();       // Iterative
+                break;
+                case 6 : longestWaiting();        // Recursive
+                break;
+                case 7 : viewCustomerHistory();   // View history
+                break;
+                case 0 : System.out.println("\n[System closed. Thank you]");
+                break;
+                default : System.out.println("Invalid option. Please try again");
             }
         } while (choice != 0);
         sc.close();
